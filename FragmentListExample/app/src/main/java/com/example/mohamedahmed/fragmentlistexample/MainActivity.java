@@ -7,7 +7,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 
 
-public class MainActivity extends Activity implements ExampleItemFragment.OnFragmentInteractionListener{
+public class MainActivity extends Activity implements ExampleItemFragment.OnFragmentInteractionListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,8 +16,8 @@ public class MainActivity extends Activity implements ExampleItemFragment.OnFrag
 
         if (savedInstanceState == null) {
             getFragmentManager().beginTransaction()
-                    .add(R.id.fragment, new ExampleItemFragment())
-                    .commit();
+                .add(R.id.fragment, new ExampleItemFragment())
+                .commit();
         }
     }
 
@@ -36,7 +36,7 @@ public class MainActivity extends Activity implements ExampleItemFragment.OnFrag
         return super.onOptionsItemSelected(item);
     }
 
-    public void onFragmentInteraction(String id){
+    public void onFragmentInteraction(String id) {
 
     }
 
